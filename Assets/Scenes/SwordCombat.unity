@@ -161,6 +161,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 493223586356086366, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 493223586356086366, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 544766757105064706, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.617
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462819594914238447, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462819594914238447, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462819594914238447, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2514708238867625035, guid: 84303088b175b485a8be82808186eb14,
         type: 3}
       propertyPath: m_RootOrder
@@ -282,6 +312,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1 &507207251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1462819594914730959, guid: 84303088b175b485a8be82808186eb14,
+    type: 3}
+  m_PrefabInstance: {fileID: 290203129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &507207255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507207251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e01be78f61ca34ecebe62392d553e980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 290203131}
+  jointPosition: {x: 0, y: 0, z: 0}
+  connectPoint: {x: 2, y: 0, z: 2}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
