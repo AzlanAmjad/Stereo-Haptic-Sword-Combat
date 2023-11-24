@@ -161,6 +161,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 493223586356086366, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 493223586356086366, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 544766757105064706, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.617
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462819594914238447, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462819594914238447, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462819594914238447, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2514708238867625035, guid: 84303088b175b485a8be82808186eb14,
         type: 3}
       propertyPath: m_RootOrder
