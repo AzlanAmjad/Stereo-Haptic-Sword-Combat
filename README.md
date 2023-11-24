@@ -1,1 +1,0 @@
-# Stereo-Haptic-Sword-Combat
