@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44904447, g: 0.49911177, b: 0.5757131, a: 1}
+  m_IndirectSpecularColor: {r: 0.44904506, g: 0.49911243, b: 0.5757146, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -173,8 +173,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 544766757105064706, guid: 84303088b175b485a8be82808186eb14,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 544766757105064706, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 544766757105064706, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.617
+      value: 1.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 547669271355347502, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1462819594914238447, guid: 84303088b175b485a8be82808186eb14,
         type: 3}
@@ -190,6 +205,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462819594914730959, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_TagString
+      value: Touchable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939954960002406305, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 2514708238867625035, guid: 84303088b175b485a8be82808186eb14,
         type: 3}
@@ -312,27 +337,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!1 &507207251 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1462819594914730959, guid: 84303088b175b485a8be82808186eb14,
-    type: 3}
-  m_PrefabInstance: {fileID: 290203129}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &507207255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507207251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e01be78f61ca34ecebe62392d553e980, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  character: {fileID: 290203131}
-  jointPosition: {x: 0, y: 0, z: 0}
-  connectPoint: {x: 2, y: 0, z: 2}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,10 +541,10 @@ MonoBehaviour:
   hlTouchModel: 0
   hlTouchable: 0
   hlStiffness: 0.521
-  hlDamping: 0.348
-  hlStaticFriction: 0.672
-  hlDynamicFriction: 0.437
-  hlPopThrough: 0.149
+  hlDamping: 0.111
+  hlStaticFriction: 0.324
+  hlDynamicFriction: 0.261
+  hlPopThrough: 0
   snapDistance: 1
 --- !u!65 &1696997974
 BoxCollider:
@@ -610,7 +614,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696997972}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.8, y: 1.61, z: 7.07}
+  m_LocalPosition: {x: 8.8, y: 1.61, z: 9.8}
   m_LocalScale: {x: 4.8107605, y: 2.709, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
