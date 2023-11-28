@@ -35,7 +35,7 @@ public class JointController : MonoBehaviour
 
         // Configure the linear limits for each axis.
         SoftJointLimit linearLimit = new SoftJointLimit();
-        linearLimit.limit = 0.005f; // Adjust the limit as needed for minimal movement.
+        linearLimit.limit = 1.0f; // Adjust the limit as needed for minimal movement.
         linearLimit.bounciness = 0.0f; // Optional: Set the bounciness if you want bouncing behavior.
         joint.linearLimit = linearLimit;
     }
