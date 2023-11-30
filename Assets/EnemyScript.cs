@@ -28,7 +28,7 @@ public class EnemyScript : MonoBehaviour
         floatingHealthBar.UpdateHealthBar(health, maxHealth);
         if(health <= 0)
         {
-            // commit die
+            Destroy(gameObject);
         }
     }
 
