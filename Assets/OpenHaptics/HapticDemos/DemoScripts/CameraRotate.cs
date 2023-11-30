@@ -11,7 +11,7 @@ using UnityEngine.UI;
 public class CameraRotate : MonoBehaviour {
 
 	public GameObject[] hapticDevices = {null, null};
-	public GameObject turnTable = null;
+	public GameObject player = null;
 	public float threshold = 0.1f;
 	public float speed = 100f;
 	public bool disableSpinner = false;
@@ -27,9 +27,9 @@ public class CameraRotate : MonoBehaviour {
 
 	void Start () 
 	{
-		if (turnTable == null)
+		if (player == null)
 		{
-			Debug.LogError("The 'TurnTable' object must point to the parent of the Camera and the Haptic.");
+			Debug.LogError("The 'Player' object must point to the parent of the Camera and the Haptic.");
 			return;
 		}
 
@@ -38,7 +38,7 @@ public class CameraRotate : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (turnTable == null)	return;
+		if (player == null)	return;
 			
 
 		// Keypress for confused users
@@ -88,14 +88,14 @@ public class CameraRotate : MonoBehaviour {
 			float T = (Screen.width / 2.0f) - Screen.width * threshold;
 
 
-			// If the X value is greater than the threshold, rotate the "turnTable" object.
+			// If the X value is greater than the threshold, rotate the "player" object.
 			if (Mathf.Abs(x) > T && !isDisabled)
 			{
 				float mag = Mathf.Min(Mathf.Abs(x), 10* Screen.width * threshold);
 				float delta = (mag - T) * (Mathf.Abs(x) / x);
 				delta /= Screen.width;
 
-				turnTable.transform.Rotate(0, -speed * delta * Time.deltaTime, 0);
+				player.transform.Rotate(0, -speed * delta * Time.deltaTime, 0);
 
 				// Light up the icon
 				if (leftIcon != null && x < 0)

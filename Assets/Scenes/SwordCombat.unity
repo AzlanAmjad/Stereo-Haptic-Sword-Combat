@@ -179,12 +179,12 @@ PrefabInstance:
     - target: {fileID: 544766757105064706, guid: 84303088b175b485a8be82808186eb14,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.58
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 544766757105064706, guid: 84303088b175b485a8be82808186eb14,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.86
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 547669271355347502, guid: 84303088b175b485a8be82808186eb14,
         type: 3}
@@ -284,6 +284,16 @@ PrefabInstance:
     - target: {fileID: 4819629084864698822, guid: 84303088b175b485a8be82808186eb14,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479373093691457605, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 290203131}
+    - target: {fileID: 5479373093691457605, guid: 84303088b175b485a8be82808186eb14,
+        type: 3}
+      propertyPath: disableSpinner
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7577162085487127864, guid: 84303088b175b485a8be82808186eb14,
