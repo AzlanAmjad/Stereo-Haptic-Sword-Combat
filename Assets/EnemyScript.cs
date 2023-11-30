@@ -24,8 +24,8 @@ public class EnemyScript : MonoBehaviour
     }
     public void TakeDamage(float damageAmount)
     {
-        health -= damageAmount; 
-        floatingHealthBar.UpdateHealthBar(health, maxHealth)
+        health -= damageAmount;
+        floatingHealthBar.UpdateHealthBar(health, maxHealth);
         if(health <= 0)
         {
             // commit die

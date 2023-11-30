@@ -8,14 +8,20 @@ public class AttackController : MonoBehaviour
     public FloatingHealthBar floatingHealthBar; 
     public float damage = 0.5f;
 
-    public void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.CompareTag("Touchable") && other.GetComponent<EnemyScript>())
+        if (collision.gameObject.CompareTag("Enemy")) // Adjust the tag based on your enemy GameObject
         {
-            enemyScript = other.GetComponent<EnemyScript>();
-            enemyScript.TakeDamage(damage); 
+            // Call a method on the enemy script to apply damage
+            enemyScript = collision.gameObject.GetComponent<EnemyScript>();
+            if (enemyScript != null)
+            {
+                enemyScript.TakeDamage(damage);
+                Debug.Log("Enemy hit!");
+            }
         }
     }
+
     // Start is called before the first frame update
     void Start()
     {
