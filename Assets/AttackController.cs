@@ -5,32 +5,26 @@ using UnityEngine;
 public class AttackController : MonoBehaviour
 {
     public EnemyScript enemyScript;
-    public FloatingHealthBar floatingHealthBar; 
+    public FloatingHealthBar floatingHealthBar;
     public float damage = 0.5f;
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Enemy")) // Adjust the tag based on your enemy GameObject
+        if (other.CompareTag("Touchable") && other.GetComponent<EnemyScript>())
         {
-            // Call a method on the enemy script to apply damage
-            enemyScript = collision.gameObject.GetComponent<EnemyScript>();
-            if (enemyScript != null)
-            {
-                enemyScript.TakeDamage(damage);
-                Debug.Log("Enemy hit!");
-            }
+            enemyScript = other.GetComponent<EnemyScript>();
+            enemyScript.TakeDamage(damage);
         }
     }
-
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
